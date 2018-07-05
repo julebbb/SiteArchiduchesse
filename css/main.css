@@ -97,21 +97,114 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* ############################################
+############## Pictures adding ##########
+#############################################*/
 
+.imgPrune, .imgVioletViolette, .imgAubergine, .imgMauveMure, .imgBleuLigne, .imgJusteMauve, .imgPurpleRain, .imgUltraViolet, .imgRosePanthere, .imgRoseFramboise, .imgVioletVioline, .imgRosePetiteFille, .imgBleuPetitGarcon, .imgRougeMaisonClose {
+  max-width: 320px;
+  width: 225px;
+  height: 185px;
+  display: block;
+}
 
+.imgRougeMaisonClose {
+  background-image: url("../img/rouge-maison-close.jpg");
+}
+.imgRougeMaisonClose:hover {
+  background: url("../img/rouge-maison-closeHover.jpg") no-repeat;
+}
 
+.imgRoseFramboise {
+  background-image: url("../img/chaussettes-rose-framboise.jpg");
+}
+.imgRoseFramboise:hover {
+  background-image: url("../img/chaussettes-rose-framboiseHover.jpg");
+}
 
+.imgRosePanthere {
+  background: url("../img/rose-panthere.jpg");
+}
+.imgRosePanthere:hover {
+  background: url("../img/rose-panthereHover.jpg");
+}
 
+.imgRosePetiteFille {
+  background: url("../img/rose-petite-fille.jpg");
+}
+.imgRosePetiteFille:hover {
+  background: url("../img/rose-petite-filleHover.jpg");
+}
 
+.imgAubergine {
+  background: url("../img/aubergine.jpg");
+}
+.imgAubergine:hover {
+  background: url("../img/aubergineHover.jpg");
+}
 
+.imgPrune {
+  background: url("../img/prune.jpg");
+}
+.imgPrune:hover {
+  background: url("../img/pruneHover.jpg");
+}
 
+.imgMauveMure {
+  background: url("../img/mauve-mure.jpg");
+}
+.imgMauveMure:hover {
+  background: url("../img/mauve-mureHover.jpg") no-repeat;
+}
 
+.imgPurpleRain {
+  background: url("../img/purple-rain.jpg");
+}
+.imgPurpleRain:hover {
+  background: url("../img/purple-rainHover.jpg");
+}
 
+.imgJusteMauve {
+  background: url("../img/juste-mauve.jpg")
+}
+.imgJusteMauve:hover {
+  background: url("../img/juste-mauveHover.jpg")
+}
 
+.imgVioletVioline {
+  background: url("../img/chaussettes-violet-violine.jpg");
+}
+.imgVioletVioline:hover {
+  background: url("../img/chaussettes-violet-violineHover.jpg");
+}
 
+.imgUltraViolet {
+  background: url("../img/ultra-violet.jpg");
+}
+.imgUltraViolet:hover {
+  background: url("../img/ultra-violetHover.jpg");
+}
 
+.imgVioletViolette {
+  background: url("../img/violet-violette.jpg");
+}
+.imgVioletViolette:hover {
+  background: url("../img/violet-violetteHover.jpg");
+}
 
+.imgBleuLigne {
+  background: url("../img/bleu-ligne-13.jpg");
+}
+.imgBleuLigne:hover {
+  background: url("../img/bleu-ligne-13Hover.jpg");
+}
 
+.imgBleuPetitGarcon {
+  background: url("../img/bleu-petit-garcon.jpg");
+}
+.imgBleuPetitGarcon:hover {
+  background: url("../img/bleu-petit-garconHover.jpg");
+}
 
 /* ==========================================================================
    Helper classes
