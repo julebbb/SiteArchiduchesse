@@ -15,7 +15,7 @@
     <link rel="icon" type="image/png" href="img/favicon-192x192.png" sizes="192x192">
     <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96">
     <!-- Place favicon.ico in the root directory -->
-    w<!--32x32 le favicon -->
+    <!--32x32 le favicon -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
@@ -27,9 +27,11 @@
 
     <!-- Add your site or application content here -->
     <header>
-      <i class="fas fa-bars"></i>
+      <a href="#">
+        <i class="fas fa-bars"></i>
+      </a>
 
-      <ul>
+      <ul class="hidden">
         <li><a href="#">Shop<a></li>
         <li><a href="#">Info</a></li>
         <li><a href="#">Blog</a></li>
@@ -40,9 +42,9 @@
         <img src="img/logo-normal.svg" alt="">
       </div>
 
-      <p>Bienvenue, <a href="#">Connexion</a></p>
+      <p class="hidden">Bienvenue, <a href="#">Connexion</a></p>
 
-      <select class="" name="Langue">
+      <select class="hidden" name="Langue">
         <option value="Francais" selected>FR</option>
         <option value="Anglais">EN</option>
         <option value="Espagnole">ES</option>
@@ -50,7 +52,7 @@
       </select>
 
       <!--SVG Shop and Basket -->
-      <div class="shop">
+      <div class="shop hidden">
         <a href="#">
         <img src="img/shop.svg" alt="Un magasin">
         </a>
@@ -65,7 +67,7 @@
       </div>
     </header>
 
-    <section>
+    <section class="hidden">
       <img src="img/icon-30x30.png" alt="">
 
       <ul>
@@ -79,18 +81,29 @@
       </article>
     </section>
 
-    <section>
+    <section class="product">
 
       <aside class="pub">
-        <img src="" alt="">
-        <p>Soldes d'Été</p>
-        <p>Les Soldes d'Été débarquent !</p>
-        <a href="#">Découvrir</a>
-      </aside>
-
-      <article class="">
-        <a href="#" class="imgRougeMaisonClose">
+        <a href="#">
+          <img src="img/solde.png" alt="solde">
+          <p>Soldes d'Été</p>
+          <p>Les Soldes d'Été débarquent !</p>
         </a>
+        <a href="#">
+          Découvrir
+        </a>
+      </aside>
+      <div class="container">
+      <article class="socks">
+
+        <div class="overlay-image"><a href="#">
+          <img class="image" src="img/rouge-maison-close.jpg" alt="Tas de chaussette">
+          <div class="hover">
+            <img class="image" src="img/rouge-maison-closeHover.jpg" alt="Chaussette au pied">
+          </div>
+        </a>
+        </div>
+
         <p>Bouclette <span class="price">7,00 €</span></p>
         <a href="#">Rouge maison close</a>
         <div class="">
@@ -101,9 +114,13 @@
         </div>
       </article>
 
-      <article class="">
-        <a href="#" class="imgRoseFramboise">
-        </a>
+      <article class="socks">
+        <div class="overlay-image"><a href="#">
+          <img class="image" src="img/chaussettes-rose-framboise.jpg" alt="Tas de chaussette">
+          <div class="hover">
+            <img class="image" src="img/chaussettes-rose-framboiseHover.jpg" alt="Chaussette au pied">
+          </div>
+        </a></div>
         <p>De ville <span class="price">6,50 €</span></p>
         <a href="#">Rose framboise</a>
         <div class="">
@@ -119,9 +136,13 @@
         </div>
       </article>
 
-      <article class="">
-        <a href="#" class="imgRosePanthere">
-        </a>
+      <article class="socks">
+        <div class="overlay-image"><a href="#">
+          <img class="image" src="img/rose-panthere.jpg" alt="Tas de chaussette">
+          <div class="hover">
+            <img class="image" src="img/rose-panthereHover.jpg" alt="Chaussette au pied">
+          </div>
+        </a></div>
         <p>De ville <span class="price">6,50 €</span></p>
         <a href="#">Rose panthère</a>
         <div class="">
@@ -132,6 +153,9 @@
           </ul>
         </div>
       </article>
+    </div>
+
+
 
       <article class="">
         <div class="imgRosePetiteFille">
@@ -396,7 +420,7 @@
         </div>
 
       </section>
-      
+
     </footer>
     <script src="js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

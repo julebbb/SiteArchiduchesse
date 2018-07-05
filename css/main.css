@@ -96,9 +96,16 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+  font-family: Georgia,Times,"Times New Roman",serif;
+  color: #444;
+}
+
+
+
 
 /* ############################################
-############## Pictures adding ##########
+############## Pictures adding and transition ##########
 #############################################*/
 
 .imgPrune, .imgVioletViolette, .imgAubergine, .imgMauveMure, .imgBleuLigne, .imgJusteMauve, .imgPurpleRain, .imgUltraViolet, .imgRosePanthere, .imgRoseFramboise, .imgVioletVioline, .imgRosePetiteFille, .imgBleuPetitGarcon, .imgRougeMaisonClose {
@@ -108,103 +115,156 @@ textarea {
   display: block;
 }
 
-.imgRougeMaisonClose {
-  background-image: url("../img/rouge-maison-close.jpg");
-}
-.imgRougeMaisonClose:hover {
-  background: url("../img/rouge-maison-closeHover.jpg") no-repeat;
-}
-
-.imgRoseFramboise {
-  background-image: url("../img/chaussettes-rose-framboise.jpg");
-}
-.imgRoseFramboise:hover {
-  background-image: url("../img/chaussettes-rose-framboiseHover.jpg");
+/* Principal Container*/
+.overlay-image {
+ position: relative;
+ width: 100%;
 }
 
-.imgRosePanthere {
-  background: url("../img/rose-panthere.jpg");
-}
-.imgRosePanthere:hover {
-  background: url("../img/rose-panthereHover.jpg");
-}
-
-.imgRosePetiteFille {
-  background: url("../img/rose-petite-fille.jpg");
-}
-.imgRosePetiteFille:hover {
-  background: url("../img/rose-petite-filleHover.jpg");
+/* Original image*/
+.overlay-image .image {
+ display: block;
+ width: 100%;
+ height: auto;
 }
 
-.imgAubergine {
-  background: url("../img/aubergine.jpg");
-}
-.imgAubergine:hover {
-  background: url("../img/aubergineHover.jpg");
-}
-
-.imgPrune {
-  background: url("../img/prune.jpg");
-}
-.imgPrune:hover {
-  background: url("../img/pruneHover.jpg");
+/* Overlay */
+.overlay-image .hover {
+ position: absolute;
+ top: 0;
+ height: 100%;
+ width: 100%;
+ opacity: 0;
+ transition: .5s ease;
 }
 
-.imgMauveMure {
-  background: url("../img/mauve-mure.jpg");
-}
-.imgMauveMure:hover {
-  background: url("../img/mauve-mureHover.jpg") no-repeat;
+
+
+.hover:hover {
+  opacity: 1;
 }
 
-.imgPurpleRain {
-  background: url("../img/purple-rain.jpg");
-}
-.imgPurpleRain:hover {
-  background: url("../img/purple-rainHover.jpg");
+/* ===================================
+==================  Header ===========
+======================================*/
+
+.hidden {
+  display: none;
 }
 
-.imgJusteMauve {
-  background: url("../img/juste-mauve.jpg")
-}
-.imgJusteMauve:hover {
-  background: url("../img/juste-mauveHover.jpg")
-}
-
-.imgVioletVioline {
-  background: url("../img/chaussettes-violet-violine.jpg");
-}
-.imgVioletVioline:hover {
-  background: url("../img/chaussettes-violet-violineHover.jpg");
+header {
+  display: flex;
+  height: 50px;
+  min-height: 50px;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
 }
 
-.imgUltraViolet {
-  background: url("../img/ultra-violet.jpg");
-}
-.imgUltraViolet:hover {
-  background: url("../img/ultra-violetHover.jpg");
-}
-
-.imgVioletViolette {
-  background: url("../img/violet-violette.jpg");
-}
-.imgVioletViolette:hover {
-  background: url("../img/violet-violetteHover.jpg");
+.fa-bars {
+  color: darkgray;
+  padding: 10px;
+  font-size: 25px;
 }
 
-.imgBleuLigne {
-  background: url("../img/bleu-ligne-13.jpg");
-}
-.imgBleuLigne:hover {
-  background: url("../img/bleu-ligne-13Hover.jpg");
+.title {
+  width: 140px;
 }
 
-.imgBleuPetitGarcon {
-  background: url("../img/bleu-petit-garcon.jpg");
+.point {
+  position: absolute;
+  top: 8px;
+  right: 3px;
+  width: 20px;
+  height: 20px;
+  font-size: 6px;
+  vertical-align: middle;
+  border-radius: 25px;
+  background: gainsboro;
 }
-.imgBleuPetitGarcon:hover {
-  background: url("../img/bleu-petit-garconHover.jpg");
+
+.point h1 {
+  margin: 0;
+  color: white;
+  text-align: center;
+  line-height: 20px;
 }
+
+.basket {
+  width: 45px;
+}
+
+/* ====================================
+=========== Section index ================
+========================================*/
+section {
+  margin: 0 20px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+}
+/* ###### Aside ###### */
+
+
+.pub {
+  margin-bottom: 80px;
+}
+
+.pub img {
+  width: 100%;
+  padding-top: 60px;
+}
+
+.pub p:nth-child(2) {
+  font-family: "Trebuchet MS",Arial,sans-serif;
+  font-size: 12px;
+  background: lightgray;
+  width: 85px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px 0;
+
+}
+.pub p:nth-child(2):hover {
+  background: #cecece;
+}
+
+.pub p:nth-child(3){
+  font-size: 24px;
+  margin: 0;
+}
+.pub p:nth-child(3):hover {
+  color: #777;
+}
+
+.pub a {
+  color: #444;
+  text-decoration:  none;
+}
+
+.pub a:last-child {
+  display: block;
+  width: 65px;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  background: #444;
+  color: white;
+  border: 1px solid transparent;
+}
+
+.pub a:last-child:hover {
+  background: #2b2b2b;
+}
+
+/* ###### Product section ###### */
+
+
 
 /* ==========================================================================
    Helper classes
