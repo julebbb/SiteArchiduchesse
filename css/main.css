@@ -138,8 +138,6 @@ body {
  transition: .5s ease;
 }
 
-
-
 .hover:hover {
   opacity: 1;
 }
@@ -264,7 +262,16 @@ section {
 
 /* ###### Product section ###### */
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.socks {
+  width: 50%;
+}
+
+/*rouge maison close #7d2a35*/
 
 /* ==========================================================================
    Helper classes
