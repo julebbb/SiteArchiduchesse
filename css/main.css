@@ -108,12 +108,7 @@ body {
 ############## Pictures adding and transition ##########
 #############################################*/
 
-.imgPrune, .imgVioletViolette, .imgAubergine, .imgMauveMure, .imgBleuLigne, .imgJusteMauve, .imgPurpleRain, .imgUltraViolet, .imgRosePanthere, .imgRoseFramboise, .imgVioletVioline, .imgRosePetiteFille, .imgBleuPetitGarcon, .imgRougeMaisonClose {
-  max-width: 320px;
-  width: 225px;
-  height: 185px;
-  display: block;
-}
+
 
 /* Principal Container*/
 .overlay-image {
@@ -207,7 +202,7 @@ header {
 /* ====================================
 =========== Section index ================
 ========================================*/
-section {
+ body > div {
   margin: 0 20px;
 }
 
@@ -299,22 +294,30 @@ section {
 }
 /*rouge maison close #7d2a35*/
 
+footer {
+  max-width: 470px;
+  margin: auto;
+}
+
 .footerTop {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: baseline;
   width: 90%;
-  margin-bottom: 50px;
+  margin: 50px auto;
 }
 
 .footerTop a {
   width: 50%;
   font-size: 16px;
   text-align: center;
+  font-style: italic;
+}
+
+.footerTop a, .footerBottom a {
   color: #777;
   text-decoration: none;
-  font-style: italic;
 }
 
 /*Image footer*/
@@ -334,7 +337,7 @@ section {
   margin: auto;
 }
 
-.footerContainer {
+.footerTop .footerContainer {
   width: 40%;
   padding: 10px;
 }
@@ -350,6 +353,7 @@ section {
 
 .footerBottom div {
   padding-top: 1em;
+  width: 100%;
 }
 
 .footerBottom ul {
@@ -363,23 +367,60 @@ section {
   order: 1;
 }
 .footerBottom div:nth-child(3) {
-  order: 4;
-}
-.footerBottom div:nth-child(4) {
-  order: 5;
-}
-.footerBottom div:nth-child(5) {
   order: 2;
 }
 
-.footerBottom img:first-child {
+
+.footerBottom div:first-child img {
   width: 100%;
+  max-width: 368px;
 }
 
 .join {
   display: flex;
   flex-direction: column;
   align-content: space-around;
+}
+
+.join a {
+  text-decoration: none;
+}
+
+.join form {
+  position: relative;
+}
+
+.join input[type="submit"] {
+  background: url("../img/mail.svg") no-repeat;
+  background-size: 25px;
+  width: 25px;
+  height: 22px;
+  border: transparent;
+  position: absolute;
+  top: 25%;
+  right: 2%;
+}
+
+.join input[type="email"] {
+  width: 93%;
+  border: 1px solid aliceblue;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 1px 4px lightgray inset;
+  background-color: #f5f5f5;
+}
+
+.footerBottom li {
+  list-style-type: none;
+}
+
+.footerBottom a:hover {
+  color: #666666;
+}
+
+.footerBottom .footerContainer {
+  display: flex;
+  flex-direction: column;
 }
 
 /* ==========================================
@@ -403,16 +444,123 @@ section {
     .socks {
       padding-top: 60px;
     }
-  }
+
+    footer, .footerTop {
+      max-width: 100%;
+    }
 
 
-  @media (min-width: 993px) {
+
+    .footerTop .footerContainer {
+      width: 21%;
+    }
+
+    .footerBottom div {
+      order: initial !important;
+    }
+
+    .join input[type="email"] {
+      width: 436px;
+      margin-bottom: 10px;
+    }
+    .join form {
+      display: block;
+      width: 460px;
+      margin: auto;
+    }
+
+    .footerBottom .footerContainer {
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .footerBottom .footerContainer div {
+      width: 25%;
+    }
+ }
+  @media (min-width: 992px) {
+
+    header {
+      height: 110px;
+      position: initial;
+      background: #f5f5f5;
+      border: transparent;
+
+    }
+
+    header .nav {
+      display: flex;
+      width: 328px;
+      margin: 0 0 0 10px;
+      padding: 0;
+      list-style-type: none;
+
+    }
+
+    .nav a {
+      padding: 5px 14px;
+      background:;
+      border-radius: 0 0 5px 5px;
+      margin: 0 3px;
+      font-size: 14px;
+      text-decoration: none;
+      color: #444;
+      width: 63px;
+    }
+
+    .nav a:hover, .selectNav {
+      background: #e7e7e7;
+    }
+
+    .title {
+      align-self: center;
+      width: 325px;
+    }
+
+    .hidComputer {
+      display: none;
+    }
+
     .pub {
       width: 25%;
     }
 
     .socks {
       width: 10%;
+    }
+
+    .footerBottom {
+      flex-direction: row;
+      margin: 0;
+      text-align: left;
+      justify-content: space-around;
+    }
+
+    .footerBottom > div:nth-child(2) {
+      width: 50%;
+    }
+
+    .footerBottom > div:nth-child(3) {
+      width: 25%;
+      margin: 17px 0;
+    }
+
+    .footerBottom div:first-child {
+      margin: 0 20px;
+      text-align: center;
+    }
+
+    .join, .footerBottom div:first-child {
+      width: 25%;
+    }
+    .join form, .join input[type="email"]{
+      width: 95%;
+      margin: 0;
+    }
+
+    .hidden {
+      display: initial;
     }
   }
 /* ==========================================================================
@@ -423,9 +571,6 @@ section {
  * Hide visually and from screen readers
  */
 
-.hidden {
-    display: none !important;
-}
 
 /*
  * Hide only visually, but have it available for screen readers:
