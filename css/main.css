@@ -96,7 +96,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-body {
+body, a {
   font-family: Georgia,Times,"Times New Roman",serif;
   color: #444;
 }
@@ -423,6 +423,20 @@ footer {
   flex-direction: column;
 }
 
+.headerBlog {
+  position: relative;
+  justify-content: initial;
+}
+
+.tittleBlog {
+  margin-left: 25%;
+}
+
+.blog {
+  padding: 40px 10px;
+}
+
+
 /* ==========================================
             Responsive
   ===========================================*/
@@ -441,7 +455,7 @@ footer {
       width:25%;
     }
 
-    .socks {
+    .socks{
       padding-top: 60px;
     }
 
