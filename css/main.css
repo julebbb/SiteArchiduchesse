@@ -425,11 +425,17 @@ button:hover, body, a, .pub a  {
 
 .headerBlog {
   position: relative;
-  justify-content: initial;
+  justify-content: space-around;
 }
 
 .tittleBlog {
-  margin-left: 30%;
+  width: 100%;
+}
+
+.tittleBlog img {
+  display: block;
+  margin: auto;
+  height: 50px;
 }
 
 .blog {
@@ -478,6 +484,7 @@ blockquote::after {
 .blog p {
   margin: 7px 0;
 }
+
 .blog ul {
   margin: 0;
   list-style-type: none;
@@ -491,8 +498,15 @@ blockquote::after {
   font-size: 12px;
 }
 
+.connexionBlog {
+  display: none!important;
+}
 
 
+
+header > div{
+  display: flex;
+}
 /* ==========================================
             Responsive
   ===========================================*/
@@ -518,10 +532,6 @@ blockquote::after {
     .content {
       max-width: 740px;
       margin: auto;
-    }
-
-    .tittleBlog {
-      margin-left: 40%;
     }
 
     footer, .footerTop {
@@ -594,8 +604,8 @@ blockquote::after {
       width: 63px;
     }
 
-    .tittleBlog {
-      margin: 0;
+    .tittleBlog img {
+      height: 80px;
     }
 
     .nav a:hover, .selectNav {
@@ -618,6 +628,54 @@ blockquote::after {
       background: transparent;
     }
 
+    header div:last-child p:hover {
+      text-decoration: underline;
+
+    }
+
+    header div:nth-child(4) p {
+      display: inline;
+    }
+
+    header div:nth-child(4) {
+      width: 20%;
+    }
+
+    .basket a, .shop a {
+      height: 110px;
+      display: block;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .basket a {
+      background: #e7e7e7;
+    }
+
+    .basket a:hover {
+      background: #ddd;
+    }
+    .basket a, .shop a, .basket {
+      width: 110px;
+    }
+
+    .basket img, .shop img {
+      position: relative;
+      top: 20px;
+      width: 55px;
+    }
+
+    .basket p, .shop p {
+      position: relative;
+      top: 20px;
+    }
+
+    .point {
+      top: 30px;
+      right: 30px;
+      background: #444;
+      z-index: 2;
+    }
 
     .shop img , .basket img{
       width: 55px;
@@ -629,6 +687,10 @@ blockquote::after {
 
     .hidComputer {
       display: none;
+    }
+
+    .navShop ul, .navShop li{
+      display: inline-block;
     }
 
     .pub {
@@ -673,7 +735,9 @@ blockquote::after {
 
     .blog aside ul {
       margin-bottom: 40px;
+      width: 100%;
     }
+
 
 
     .footerBottom {
@@ -708,6 +772,8 @@ blockquote::after {
     .hidden {
       display: initial;
     }
+
+
   }
 /* ==========================================================================
    Helper classes

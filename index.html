@@ -42,34 +42,38 @@
         <img src="img/logo-normal.svg" alt="">
       </a>
 
-      <p class="hidden">Bienvenue, <a href="#">Connexion</a></p>
+      <div class="hidden connexion">
+        <p>Bienvenue, <a href="#">Connexion</a></p>
 
-      <select class="hidden" name="Langue">
-        <option value="Francais" selected>FR</option>
-        <option value="Anglais">EN</option>
-        <option value="Espagnole">ES</option>
-        <option value="Allemand">DE</option>
-      </select>
+        <select name="Langue">
+          <option value="Francais" selected>FR</option>
+          <option value="Anglais">EN</option>
+          <option value="Espagnole">ES</option>
+          <option value="Allemand">DE</option>
+        </select>
+      </div>
 
       <!--SVG Shop and Basket -->
-      <div class="shop hidden">
-        <a href="#">
-        <img src="img/shop.svg" alt="Un magasin">
-        <p>Boutiques</p>
-        </a>
-      </div>
-      <div class="basket">
-        <a href="#">
-          <div class="point">
-            <h1>0</h1>
-          </div>
-          <img src="img/basket.svg" alt="Un panier">
-          <p class="hidden">Panier</p>
-        </a>
+      <div>
+        <div class="shop hidden">
+          <a href="#">
+          <img src="img/shop.svg" alt="Un magasin">
+          <p>Boutiques</p>
+          </a>
+        </div>
+        <div class="basket hidden">
+          <a href="#">
+            <div class="point">
+              <h1>0</h1>
+            </div>
+            <img src="img/basket.svg" alt="Un panier">
+            <p>Panier</p>
+          </a>
+        </div>
       </div>
     </header>
 
-    <div class="hidden">
+    <div class="hidden navShop">
       <img src="img/icon-30x30.png" alt="">
 
       <ul>
