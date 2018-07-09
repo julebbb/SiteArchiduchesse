@@ -61,26 +61,27 @@
           <p>Boutiques</p>
           </a>
         </div>
-        <div class="basket hidden">
+        <div class="basket">
           <a href="#">
             <div class="point">
               <h1>0</h1>
             </div>
             <img src="img/basket.svg" alt="Un panier">
-            <p>Panier</p>
+            <p class="hidden">Panier</p>
           </a>
         </div>
       </div>
     </header>
 
     <div class="hidden navShop">
-      <img src="img/icon-30x30.png" alt="">
+      <img class="hidComputer" src="img/icon-30x30.png" alt="">
 
       <ul>
-        <li><a href="#">Chausettes</a></li>
-        <li><a href="">Collants</a></li>
-        <li><a href="">Espadrilles</a></li>
-        <li><a href="">Soldes</a></li>
+        <li><a href="#">Chaussettes</a></li>
+        <li><a href="#">T-shirts</a></li>
+        <li><a href="#">Espadrilles</a></li>
+        <li><a href="#">Collants</a></li>
+        <li><a href="#">Soldes</a></li>
       </ul>
     </div>
 
@@ -109,7 +110,14 @@
         <p>Bouclette <span class="price">7,00 €</span></p>
         <a href="#">Rouge maison close</a>
 
-        <div class="">
+        <select class="hidTablet">
+            <option value="Taille" selected>Tailles</option>
+            <option><a href="#">36/41</a></option>
+            <option><a href="#">42/46</a></option>
+          </ul>
+        </select>
+
+        <div class="hidden">
           <ul>
             <li><a href="#">36 41</a></li>
             <li><a href="#">42 46</a></li>
@@ -129,7 +137,19 @@
       <p>De ville <span class="price">6,50 €</span></p>
       <a href="#">Rose framboise</a>
 
-      <div class="">
+      <select class="hidTablet">
+          <option value="Taille" selected>Tailles</option>
+          <option><a href="#">15/18</a></option>
+          <option><a href="#">19/22</a></option>
+          <option><a href="#">23/26</a></option>
+          <option><a href="#">27/30</a></option>
+          <option><a href="#">31/35</a></option>
+          <option><a href="#">36/41</a></option>
+          <option><a href="#">42/46</a></option>
+        </ul>
+      </select>
+
+      <div class="hidden">
         <ul>
           <li><a href="#">15 18</a></li>
           <li><a href="#">19 22</a></li>
@@ -153,7 +173,16 @@
 
       <p>De ville <span class="price">6,50 €</span></p>
       <a href="#">Rose panthère</a>
-      <div class="">
+
+      <select class="hidTablet">
+          <option value="Taille" selected>Tailles</option>
+          <option><a href="#">31/35</a></option>
+          <option><a href="#">36/41</a></option>
+          <option><a href="#">42/46</a></option>
+        </ul>
+      </select>
+
+      <div class="hidden">
         <ul>
           <li><a href="#">31 35</a></li>
           <li><a href="#">36 41</a></li>
@@ -173,7 +202,15 @@
 
       <p>Bouclette <span class="price">7,00 €</span></p>
       <a href="#">Rose petite fille</a>
-      <div class="">
+
+      <select class="hidTablet">
+          <option value="Taille" selected>Tailles</option>
+          <option><a href="#">36/41</a></option>
+          <option><a href="#">42/46</a></option>
+        </ul>
+      </select>
+
+      <div class="hidden">
         <ul>
           <li><a href="#">36 41</a></li>
           <li><a href="#">42 46</a></li>
@@ -192,7 +229,15 @@
 
       <p>Socquette <span class="price">5,00 €</span></p>
       <a href="#">Aubergine</a>
-      <div class="">
+
+      <select class="hidTablet">
+          <option value="Taille" selected>Tailles</option>
+          <option><a href="#">36/41</a></option>
+          <option><a href="#">42/46</a></option>
+        </ul>
+      </select>
+
+      <div class="hidden">
         <ul>
           <li><a href="#">36 41</a></li>
           <li><a href="#">42 46</a></li>
@@ -212,7 +257,14 @@
       <p>Collants <span class="price">9,00 €</span></p>
       <a href="#">Prune</a>
 
-      <div class="">
+      <select class="hidTablet">
+          <option value="Taille" selected>Tailles</option>
+          <option><a href="#">1/2</a></option>
+          <option><a href="#">3/4</a></option>
+        </ul>
+      </select>
+
+      <div class="hidden">
         <ul>
           <li><a href="#">1 2</a></li>
           <li><a href="#">3 4</a></li>
@@ -232,7 +284,15 @@
       <p>Bouclette <span class="price">7,00 €</span></p>
       <a href="#">Mauve mûre</a>
 
-      <div class="">
+      <select class="hidTablet">
+          <option value="Taille" selected>Tailles</option>
+          <option><a href="#">15/18</a></option>
+          <option><a href="#">36/41</a></option>
+          <option><a href="#">42/46</a></option>
+        </ul>
+      </select>
+
+      <div class="hidden">
         <ul>
           <li><a href="#">15 18</a></li>
           <li><a href="#">36 41</a></li>
@@ -253,7 +313,14 @@
       <p>Collants <span class="price">9,00 €</span></p>
       <a href="#">Purple rain</a>
 
-      <div class="">
+      <select class="hidTablet">
+          <option value="Taille" selected>Tailles</option>
+          <option><a href="#">1/2</a></option>
+          <option><a href="#">3/4</a></option>
+        </ul>
+      </select>
+
+      <div class="hidden">
         <ul>
           <li><a href="#">1 2</a></li>
           <li><a href="#">3 4</a></li>
@@ -274,7 +341,15 @@
       <a href="#">Juste mauve</a>
       <span>-30%</span>
 
-      <div class="">
+      <select class="hidTablet">
+          <option value="Taille" selected>Tailles</option>
+          <option><a href="#">15/18</a></option>
+          <option><a href="#">36/41</a></option>
+          <option><a href="#">42/46</a></option>
+        </ul>
+      </select>
+
+      <div class="hidden">
         <ul>
           <li><a href="#">15 18</a></li>
           <li><a href="#">36 41</a></li>
@@ -295,7 +370,19 @@
       <p>De ville <span class="price">6,50 €</span></p>
       <a href="#">Violet violine</a>
 
-      <div class="">
+      <select class="hidTablet">
+          <option value="Taille" selected>Tailles</option>
+          <option><a href="#">15/18</a></option>
+          <option><a href="#">19/22</a></option>
+          <option><a href="#">23/26</a></option>
+          <option><a href="#">27/30</a></option>
+          <option><a href="#">31/35</a></option>
+          <option><a href="#">36/41</a></option>
+          <option><a href="#">42/46</a></option>
+        </ul>
+      </select>
+
+      <div class="hidden">
         <ul>
           <li><a href="#">15 18</a></li>
           <li><a href="#">19 22</a></li>
@@ -320,7 +407,15 @@
       <p>De ville <span class="price">6,50 €</span></p>
       <a href="#">Ultra violet</a>
 
-      <div class="">
+      <select class="hidTablet">
+          <option value="Taille" selected>Tailles</option>
+          <option><a href="#">31/35</a></option>
+          <option><a href="#">36/41</a></option>
+          <option><a href="#">42/46</a></option>
+        </ul>
+      </select>
+
+      <div class="hidden">
         <ul>
           <li><a href="#">31 35</a></li>
           <li><a href="#">36 41</a></li>
@@ -340,8 +435,16 @@
 
       <p>De ville <span class="price">6,50 €</span></p>
       <a href="#">Violet violette</a>
-      <div class="">
 
+      <select class="hidTablet">
+          <option value="Taille" selected>Tailles</option>
+          <option><a href="#">31/35</a></option>
+          <option><a href="#">36/41</a></option>
+          <option><a href="#">42/46</a></option>
+        </ul>
+      </select>
+
+      <div class="hidden">
         <ul>
           <li><a href="#">31 35</a></li>
           <li><a href="#">36 41</a></li>
@@ -362,7 +465,15 @@
       <p>De ville <span class="price">6,50 €</span></p>
       <a href="#">Bleu Ligne 13</a>
 
-      <div class="">
+      <select class="hidTablet">
+          <option value="Taille" selected>Tailles</option>
+          <option><a href="#">31/35</a></option>
+          <option><a href="#">36/41</a></option>
+          <option><a href="#">42/46</a></option>
+        </ul>
+      </select>
+
+      <div class="hidden">
         <ul>
           <li><a href="#">31 35</a></li>
           <li><a href="#">36 41</a></li>
@@ -383,7 +494,19 @@
         <p>De ville <span class="price">6,50 €</span></p>
         <a href="#">Bleu petit garçon</a>
 
-        <div class="">
+        <select class="hidTablet">
+            <option value="Taille" selected>Tailles</option>
+            <option><a href="#">15/18</a></option>
+            <option><a href="#">19/22</a></option>
+            <option><a href="#">23/26</a></option>
+            <option><a href="#">27/30</a></option>
+            <option><a href="#">31/35</a></option>
+            <option><a href="#">36/41</a></option>
+            <option><a href="#">42/46</a></option>
+          </ul>
+        </select>
+
+        <div class="hidden">
           <ul>
             <li><a href="#">15 18</a></li>
             <li><a href="#">19 22</a></li>

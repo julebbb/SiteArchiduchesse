@@ -105,6 +105,10 @@ ul, header .nav {
   margin: 0;
 }
 
+li {
+  list-style-type: none;
+}
+
 
 /* ############################################
 ############## Pictures Transition ##########
@@ -264,7 +268,21 @@ header {
 
 
 .socks {
-  width: 50%;
+  width: 45%;
+  padding: 0 6px;
+  text-align: center;
+}
+
+.socks p {
+  margin: 0;
+}
+
+.socks > a {
+  font-style: italic;
+  font-size: 14px;
+  padding-bottom: 22px;
+  display: block;
+  box-shadow: 1px 17px 13px -18px black;
 }
 
 .infosChaus {
@@ -471,6 +489,9 @@ blockquote::after {
   transform: rotate(180deg);
 }
 
+
+
+
 .author {
   display: inline-block;
   font-size: 10px;
@@ -523,10 +544,8 @@ header > div{
 
     .socks {
       width:25%;
-    }
-
-    .socks{
       padding-top: 60px;
+
     }
 
     .content {
@@ -689,16 +708,26 @@ header > div{
       display: none;
     }
 
+    .navShop {
+      border-bottom: 1px solid #e5e5e5;
+    }
+
     .navShop ul, .navShop li{
       display: inline-block;
     }
 
+    .navShop li {
+      padding: 15px 10px;
+      font-size: 17px;
+      font-style: italic;
+    }
+
     .pub {
-      width: 25%;
+      width: 30%;
     }
 
     .socks {
-      width: 10%;
+      width: 17%;
     }
 
     .blog {
@@ -770,7 +799,7 @@ header > div{
     }
 
     .hidden {
-      display: initial;
+      display: block;
     }
 
 
