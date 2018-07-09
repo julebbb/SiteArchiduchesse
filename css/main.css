@@ -98,14 +98,16 @@ textarea {
    ========================================================================== */
 body, a {
   font-family: Georgia,Times,"Times New Roman",serif;
-  color: #444;
+}
+
+ul, header .nav {
+  padding: 0;
+  margin: 0;
 }
 
 
-
-
 /* ############################################
-############## Pictures adding and transition ##########
+############## Pictures Transition ##########
 #############################################*/
 
 
@@ -242,14 +244,6 @@ header {
   font-size: 24px;
   margin: 0;
 }
-.pub p:nth-child(3):hover {
-  color: #777;
-}
-
-.pub a {
-  color: #444;
-  text-decoration:  none;
-}
 
 .pub a:last-child {
   display: block;
@@ -315,9 +309,23 @@ footer {
   font-style: italic;
 }
 
-.footerTop a, .footerBottom a {
-  color: #777;
+/* ###########################
+#######Link decoration none######
+###########################*/
+a  {
   text-decoration: none;
+}
+
+/*##################################
+############ Colors ####
+####################################*/
+
+.blog p, .blog ul, .footerTop a, .footerBottom a, button .pub p:nth-child(3):hover, header a {
+  color: #777;
+}
+
+button:hover, body, a, .pub a  {
+  color: #444;
 }
 
 /*Image footer*/
@@ -356,10 +364,6 @@ footer {
   width: 100%;
 }
 
-.footerBottom ul {
-  padding: 0;
-}
-
 .footerBottom div:nth-child(2) {
   order: 3;
 }
@@ -380,10 +384,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-content: space-around;
-}
-
-.join a {
-  text-decoration: none;
 }
 
 .join form {
@@ -429,12 +429,68 @@ footer {
 }
 
 .tittleBlog {
-  margin-left: 25%;
+  margin-left: 30%;
 }
 
 .blog {
   padding: 40px 10px;
 }
+
+button {
+  background: #e6e6e6;
+  border-radius: 5px;
+  border: transparent;
+  padding: 5px 10px;
+  font-size: 10px;
+}
+
+button:hover {
+  background: #ddd;
+}
+
+.h1 {
+  display: block;
+  font-size: 25px;
+}
+
+blockquote::before, blockquote::after {
+  display: inline-block;
+  content: " ";
+  background: transparent url("../img/quote.svg") no-repeat;
+  width: 50px;
+  height: 50px;
+}
+
+blockquote::after {
+  transform: rotate(180deg);
+}
+
+.author {
+  display: inline-block;
+  font-size: 10px;
+  font-style: italic;
+}
+
+.blog p, .blog ul {
+  font-size: 14px;
+}
+
+.blog p {
+  margin: 7px 0;
+}
+.blog ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.blog img {
+  width: 100%;
+}
+
+.content a:nth-child(4) {
+  font-size: 12px;
+}
+
 
 
 /* ==========================================
@@ -457,6 +513,15 @@ footer {
 
     .socks{
       padding-top: 60px;
+    }
+
+    .content {
+      max-width: 740px;
+      margin: auto;
+    }
+
+    .tittleBlog {
+      margin-left: 40%;
     }
 
     footer, .footerTop {
@@ -501,7 +566,10 @@ footer {
       position: initial;
       background: #f5f5f5;
       border: transparent;
+    }
 
+    .headerBlog {
+      justify-content: space-between;
     }
 
     header .nav {
@@ -523,15 +591,12 @@ footer {
       background:;
       border-radius: 0 0 5px 5px;
       margin: 0 3px;
-      text-decoration: none;
       width: 63px;
     }
 
-    header a {
-      color: #777;
-
+    .tittleBlog {
+      margin: 0;
     }
-
 
     .nav a:hover, .selectNav {
       background: #e7e7e7;
@@ -573,6 +638,43 @@ footer {
     .socks {
       width: 10%;
     }
+
+    .blog {
+      display: flex;
+    }
+    .content {
+      width: 85%;
+      padding: 0;
+      margin: 0 20px;
+
+    }
+    .blog aside {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .blog aside img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .blog aside h2 {
+      width: 75%;
+      margin: 0;
+    }
+    .blog aside p {
+      width: 70%;
+      margin: 0;
+      text-align: center;
+      line-height: 5px;
+      margin-bottom: 13px;
+    }
+
+    .blog aside ul {
+      margin-bottom: 40px;
+    }
+
 
     .footerBottom {
       flex-direction: row;
