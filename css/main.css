@@ -134,7 +134,7 @@ blockquote::before, blockquote::after, .author {
   display: inline-block;
 }
 
-.footerBottom .footerContainer, .footerBottom, .join,   {
+.footerBottom .footerContainer, .footerBottom, .join {
   flex-direction: column;
 }
 
