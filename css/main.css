@@ -1,0 +1,1004 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body, a {
+  font-family: Georgia,Times,"Times New Roman",serif;
+}
+
+ul, header .nav {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+/* ############################################
+############## Pictures Transition ##########
+#############################################*/
+
+
+
+/* Principal Container*/
+.overlay-image {
+ position: relative;
+ width: 100%;
+}
+
+/* Original image*/
+.overlay-image .image {
+ display: block;
+ width: 100%;
+ height: auto;
+}
+
+/* Overlay */
+.overlay-image .hover, .overlay-image .hoverFooter {
+ position: absolute;
+ top: 0;
+ height: 100%;
+ width: 100%;
+ opacity: 0;
+}
+
+.overlay-image .hover {
+   transition: .5s ease;
+}
+
+.overlay-image .hoverFooter {
+  transition: .1s ease;
+}
+
+
+.hover:hover, .hoverFooter:hover {
+  opacity: 1;
+}
+
+/* ===================================
+==================  Header ===========
+======================================*/
+
+.hidden {
+  display: none;
+}
+
+header {
+  display: flex;
+  height: 50px;
+  min-height: 50px;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  z-index: 1000;
+}
+
+.fa-bars {
+  color: darkgray;
+  padding: 10px;
+  font-size: 25px;
+}
+
+.title {
+  width: 140px;
+}
+
+.point {
+  position: absolute;
+  top: 8px;
+  right: 3px;
+  width: 20px;
+  height: 20px;
+  font-size: 6px;
+  vertical-align: middle;
+  border-radius: 25px;
+  background: gainsboro;
+}
+
+.point h1 {
+  margin: 0;
+  color: white;
+  text-align: center;
+  line-height: 20px;
+}
+
+.basket {
+  width: 45px;
+}
+
+/* ====================================
+=========== Section index ================
+========================================*/
+ body > div {
+  margin: 0 20px;
+}
+
+.product {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/* ###### Aside ###### */
+
+
+.pub {
+  margin-bottom: 80px;
+  width: 100%;
+}
+
+.pub img {
+  width: 100%;
+  padding-top: 60px;
+}
+
+.pub p:nth-child(2) {
+  font-family: "Trebuchet MS",Arial,sans-serif;
+  font-size: 12px;
+  background: lightgray;
+  width: 85px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px 0;
+
+}
+.pub p:nth-child(2):hover {
+  background: #cecece;
+}
+
+.pub p:nth-child(3){
+  font-size: 24px;
+  margin: 0;
+}
+
+.pub a:last-child {
+  display: block;
+  width: 65px;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  background: #444;
+  color: white;
+  border: 1px solid transparent;
+}
+
+.pub a:last-child:hover {
+  background: #2b2b2b;
+}
+
+/* ###### Product section ###### */
+
+
+.socks {
+  width: 45%;
+  padding: 12px 6px;
+  text-align: center;
+}
+
+.socks p {
+  margin: 0;
+}
+
+.socks > a {
+  font-style: italic;
+  font-size: 14px;
+  padding-bottom: 22px;
+  display: block;
+  box-shadow: 1px 17px 13px -18px black;
+}
+
+.infosChaus {
+  margin: 0 10px;
+  border-top: 1px solid lightgray;
+}
+
+.infosChaus article {
+  margin: 10px;
+}
+
+.infosChaus article h2 {
+  font-size: 26px;
+  text-align: center;
+  font-weight: 500;
+  margin: 0;
+}
+
+.infosChaus article p {
+  margin: 10px 0;
+}
+/*rouge maison close #7d2a35*/
+
+footer {
+  max-width: 470px;
+  margin: auto;
+}
+
+.footerTop {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: baseline;
+  width: 90%;
+  margin: 50px auto;
+}
+
+.footerTop a {
+  width: 50%;
+  font-size: 16px;
+  text-align: center;
+  font-style: italic;
+}
+
+/* ###########################
+#######Link decoration none######
+###########################*/
+a  {
+  text-decoration: none;
+}
+
+/*##################################
+############ Colors ####
+####################################*/
+
+.blog p, .blog ul, .footerTop a, .footerBottom a, button .pub p:nth-child(3):hover, header a {
+  color: #777;
+}
+
+button:hover, body, a, .pub a  {
+  color: #444;
+}
+
+/*Image footer*/
+.coq {
+  width: 63px !important;
+}
+.retour, .paiement, .livraison {
+  width: 101px !important;
+}
+
+.coq, .retour, .paiement, .livraison {
+    margin: auto;
+}
+
+.footerTop .overlay-image {
+  width: 100%;
+  margin: auto;
+}
+
+.footerTop .footerContainer {
+  width: 40%;
+  padding: 10px;
+}
+
+.footerBottom {
+  display: flex;
+  flex-direction: column;
+  background: #f5f5f5;
+  margin: 0 10px;
+  padding: 50px 10px;
+  text-align: center;
+}
+
+.footerBottom div {
+  padding-top: 1em;
+  width: 100%;
+}
+
+.footerBottom div:nth-child(2) {
+  order: 3;
+}
+.footerBottom div:first-child {
+  order: 1;
+}
+.footerBottom div:nth-child(3) {
+  order: 2;
+}
+
+
+.footerBottom div:first-child img {
+  width: 100%;
+  max-width: 368px;
+}
+
+.join {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+.join form {
+  position: relative;
+}
+
+.join input[type="submit"] {
+  background: url("../img/mail.svg") no-repeat;
+  background-size: 25px;
+  width: 25px;
+  height: 22px;
+  border: transparent;
+  position: absolute;
+  top: 25%;
+  right: 2%;
+}
+
+.join input[type="email"] {
+  width: 93%;
+  border: 1px solid aliceblue;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 1px 4px lightgray inset;
+  background-color: #f5f5f5;
+}
+
+.footerBottom li {
+  list-style-type: none;
+}
+
+.footerBottom a:hover {
+  color: #666666;
+}
+
+.footerBottom .footerContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerBlog {
+  position: relative;
+  justify-content: space-around;
+}
+
+.tittleBlog {
+  width: 100%;
+}
+
+.tittleBlog img {
+  display: block;
+  margin: auto;
+  height: 50px;
+}
+
+.blog {
+  padding: 40px 10px;
+}
+
+button {
+  background: #e6e6e6;
+  border-radius: 5px;
+  border: transparent;
+  padding: 5px 10px;
+  font-size: 10px;
+}
+
+button:hover {
+  background: #ddd;
+}
+
+.h1 {
+  display: block;
+  font-size: 25px;
+}
+
+blockquote::before, blockquote::after {
+  display: inline-block;
+  content: " ";
+  background: transparent url("../img/quote.svg") no-repeat;
+  width: 50px;
+  height: 50px;
+}
+
+blockquote::after {
+  transform: rotate(180deg);
+}
+
+
+
+
+.author {
+  display: inline-block;
+  font-size: 10px;
+  font-style: italic;
+}
+
+.blog p, .blog ul {
+  font-size: 14px;
+}
+
+.blog p {
+  margin: 7px 0;
+}
+
+.blog ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.blog img {
+  width: 100%;
+}
+
+.content a:nth-child(4) {
+  font-size: 12px;
+}
+
+.connexionBlog {
+  display: none!important;
+}
+
+
+
+header > div{
+  display: flex;
+}
+/* ==========================================
+            Responsive
+  ===========================================*/
+
+  @media (min-width: 768px) {
+    .product {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .pub {
+      width: 50%;
+    }
+
+    .socks {
+      width:25%;
+      padding-top: 60px;
+
+    }
+
+    .hidTablet {
+      display: none;
+    }
+
+    .content {
+      max-width: 740px;
+      margin: auto;
+    }
+
+    footer, .footerTop {
+      max-width: 100%;
+    }
+
+
+
+    .footerTop .footerContainer {
+      width: 21%;
+    }
+
+    .footerBottom div {
+      order: initial !important;
+    }
+
+    .join input[type="email"] {
+      width: 436px;
+      margin-bottom: 10px;
+    }
+    .join form {
+      display: block;
+      width: 460px;
+      margin: auto;
+    }
+
+    .footerBottom .footerContainer {
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .footerBottom .footerContainer div {
+      width: 25%;
+    }
+ }
+
+  @media (min-width: 992px) {
+
+    header {
+      height: 110px;
+      position: initial;
+      background: #f5f5f5;
+      border: transparent;
+    }
+
+    .headerBlog {
+      justify-content: space-between;
+    }
+
+    header .nav {
+      display: flex;
+      width: 328px;
+      margin: 0 0 0 10px;
+      padding: 0;
+      list-style-type: none;
+
+    }
+
+    .nav a, header p {
+      font-size: 14px;
+
+    }
+
+    .nav a {
+      padding: 5px 14px;
+      background:;
+      border-radius: 0 0 5px 5px;
+      margin: 0 3px;
+      width: 63px;
+    }
+
+    .tittleBlog img {
+      height: 80px;
+    }
+
+    .nav a:hover, .selectNav {
+      background: #e7e7e7;
+    }
+
+    .title {
+      align-self: center;
+      width: 300px;
+    }
+
+    header p, header select {
+      align-self: flex-start;
+      margin: 0;
+    }
+
+    header select {
+      font-size: 10px;
+      border: transparent;
+      background: transparent;
+    }
+
+    header div:last-child p:hover {
+      text-decoration: underline;
+
+    }
+
+    header div:nth-child(4) p {
+      display: inline;
+    }
+
+    header div:nth-child(4) {
+      width: 20%;
+    }
+
+    .basket a, .shop a {
+      height: 110px;
+      display: block;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .basket a {
+      background: #e7e7e7;
+    }
+
+    .basket a:hover {
+      background: #ddd;
+    }
+    .basket a, .shop a, .basket {
+      width: 110px;
+    }
+
+    .basket img, .shop img {
+      position: relative;
+      top: 20px;
+      width: 55px;
+    }
+
+    .basket p, .shop p {
+      position: relative;
+      top: 20px;
+    }
+
+    .point {
+      top: 30px;
+      right: 30px;
+      background: #444;
+      z-index: 2;
+    }
+
+    .shop img , .basket img{
+      width: 55px;
+    }
+
+    .shop, .basket {
+      align-self: center;
+    }
+
+    .hidComputer {
+      display: none;
+    }
+
+    .navShop {
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .navShop ul, .navShop li{
+      display: inline-block;
+    }
+
+    .navShop li {
+      padding: 15px 10px;
+      font-size: 17px;
+      font-style: italic;
+    }
+
+    .pub {
+      width: 30%;
+    }
+
+    .socks {
+      width: 17%;
+    }
+
+    .blog {
+      display: flex;
+      justify-content: space-around;
+      width: 95%;
+      font-size: 14px;
+    }
+
+    .blog div:last-child {
+      width: 20%;
+    }
+
+    button {
+      font-size: 12px;
+    }
+
+    .h1 {
+      font-size: 30px;
+    }
+
+    .blog p, .blog ul {
+      font-size: 15px;
+    }
+
+    blockquote {
+      font-size: 20px;
+      font-style: italic;
+      font-weight: bold;
+    }
+    .content {
+      width: 85%;
+      padding: 0;
+      margin: 0 20px;
+
+    }
+    .blog aside {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .blog aside img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .blog aside h2 {
+      width: 75%;
+      margin: 0;
+    }
+    .blog aside p {
+      width: 70%;
+      margin: 0;
+      text-align: center;
+      line-height: 5px;
+      margin-bottom: 13px;
+    }
+
+    .blog aside ul {
+      margin-bottom: 40px;
+      width: 100%;
+    }
+
+
+
+    .footerBottom {
+      flex-direction: row;
+      margin: 0;
+      text-align: left;
+      justify-content: space-around;
+    }
+
+    .footerBottom > div:nth-child(2) {
+      width: 50%;
+    }
+
+    .footerBottom > div:nth-child(3) {
+      width: 25%;
+      margin: 17px 0;
+    }
+
+    .footerBottom div:first-child {
+      margin: 0 20px;
+      text-align: center;
+    }
+
+    .join, .footerBottom div:first-child {
+      width: 25%;
+    }
+    .join form, .join input[type="email"]{
+      width: 95%;
+      margin: 0;
+    }
+
+    .hidden {
+      display: block;
+    }
+
+
+  }
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
