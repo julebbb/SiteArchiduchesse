@@ -269,7 +269,7 @@ header {
 
 .socks {
   width: 45%;
-  padding: 0 6px;
+  padding: 12px 6px;
   text-align: center;
 }
 
@@ -548,6 +548,10 @@ header > div{
 
     }
 
+    .hidTablet {
+      display: none;
+    }
+
     .content {
       max-width: 740px;
       margin: auto;
@@ -732,6 +736,31 @@ header > div{
 
     .blog {
       display: flex;
+      justify-content: space-around;
+      width: 95%;
+      font-size: 14px;
+    }
+
+    .blog div:last-child {
+      width: 20%;
+    }
+
+    button {
+      font-size: 12px;
+    }
+
+    .h1 {
+      font-size: 30px;
+    }
+
+    .blog p, .blog ul {
+      font-size: 15px;
+    }
+
+    blockquote {
+      font-size: 20px;
+      font-style: italic;
+      font-weight: bold;
     }
     .content {
       width: 85%;
